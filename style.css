@@ -52,7 +52,7 @@ h5 {
 /* questions icon/button */
 .btn {
     border: none; 
-    background-color: #8DB1EA;
+    background-color: transparent;
     border-radius: 50%;
     padding: 0.5rem;
     margin-left: -0.8rem;
