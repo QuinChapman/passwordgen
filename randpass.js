@@ -73,12 +73,12 @@ $(document).ready(function() {
     new jBox("Tooltip", {
         attach: ".result",
         content: "Copy to Clipboard",
-        delayOpen: 500
+        delayOpen: 600
     }),
 
     new jBox("Tooltip", {
         attach: ".genbtn",
         content: "Generate",
+        delayOpen: 600
     });
 });
-
