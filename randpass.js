@@ -41,8 +41,8 @@ $(document).ready(function() {
             length = 7
         } 
 
-        // password length less than 99
-        if ($(".lengthInput").val() > 99) {
+        // password length validation
+        if ($(".lengthInput").val() < 1 || $(".lengthInput").val() > 99) {
             new jBox("Notice", {
                 content: "Please enter a length between 1 and 99!",
                 color: "red",
@@ -50,7 +50,14 @@ $(document).ready(function() {
                 animation: "tada"
             });
             $(".result").val() = "";
-
+        } else if (isNaN( $(".lengthInput").val())) {
+            new jBox("Notice", {
+                content: "Please enter a valid number!",
+                color: "red",
+                autoClose: 1000,
+                animation: "tada"
+            });
+            $(".result").val() = "";
         }
 
         var chars = "";
