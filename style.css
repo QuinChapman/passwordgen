@@ -261,4 +261,7 @@ img {
     .generator {
         margin-top: 1.5rem;
     }   
+    .btn {
+        margin-left: -1.7rem;
+    }
 }
