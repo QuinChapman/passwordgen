@@ -39,8 +39,20 @@ $(document).ready(function() {
         // default password length
         if (!length) {
             length = 7
+        } 
+
+        // password length less than 99
+        if ($(".lengthInput").val() > 99) {
+            new jBox("Notice", {
+                content: "Please enter a length between 1 and 99!",
+                color: "red",
+                autoClose: 1000,
+                animation: "tada"
+            });
+            $(".result").val() = "";
+
         }
-        
+
         var chars = "";
         amountOfCharacters = passStr.length;
         if (amountOfCharacters == 0) {
@@ -73,12 +85,14 @@ $(document).ready(function() {
     new jBox("Tooltip", {
         attach: ".result",
         content: "Copy to Clipboard",
-        delayOpen: 600
+        delayOpen: 600,
+        closeOnClick: true
     }),
 
     new jBox("Tooltip", {
         attach: ".genbtn",
         content: "Generate",
-        delayOpen: 600
+        delayOpen: 600,
+        closeOnClick: true
     });
 });
