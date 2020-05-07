@@ -264,7 +264,8 @@ img {
     }
 }
 
-@media only screen and (orientation: landscape) {
+/* landscape */
+@media only screen and (max-height: 400px) {
     html { 
         background-color: #8DB1EA;
     }
