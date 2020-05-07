@@ -96,9 +96,8 @@ button {
     outline: none;  
     border: 2px solid white;
     font-family: 'Economica', sans-serif;
-    font-size: 18px;
+    font-size: 26px;
     letter-spacing: 0.1rem;
-    /* color: transparent; */
 }
 
 .result:focus {
@@ -147,8 +146,8 @@ button {
     border-bottom: 3px dotted white; 
     background-color: transparent;
     outline: none;
-    padding-left: 0.6rem;
-    width: 3%;
+    width: 5%;
+    text-align: center;
 }
 
 /* checkboxes */
@@ -235,19 +234,18 @@ img {
         width: 70%; 
     }
     .generator input[type = "text"] {
-        padding-left: 4.5rem;
+        padding-left: 5rem;
     }
     .passLength {
-        font-size: 18px;
+        font-size: 16px;
     }
     .result {
-        font-size: 12px;
+        font-size: 16px;
     }
     .lengthInput {
         font-size: 20px;
         border-bottom: 2px dotted white; 
-        padding-left: 0.7rem;
-        width: 8%;
+        width: 10%;
     }
     img {
         width: 20%;
@@ -263,5 +261,14 @@ img {
     }   
     .btn {
         margin-left: -1.7rem;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    html { 
+        background-color: #8DB1EA;
+    }
+    footer {
+        visibility: hidden;
     }
 }
