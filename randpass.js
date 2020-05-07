@@ -72,17 +72,11 @@ $(document).ready(function() {
     // tooltips
     new jBox("Tooltip", {
         attach: ".result",
-        content: "Copy to Clipboard",
-        autoClose: 800,
+        content: "Copy to Clipboard"
     }),
 
     new jBox("Tooltip", {
         attach: ".genbtn",
         content: "Generate",
-        autoClose: 600,
     });
-
-    // copied notice
-
 });
-
