@@ -1,4 +1,4 @@
-# JavaScript - Random Password Generator
+# Random Password Generator
 A random password generator using JavaScript.
 
 ## Features
