@@ -215,8 +215,7 @@ img {
     margin: 0 auto;
 }
 
-/* responsive */
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     html { 
         background: url("images/overlay-01.svg") no-repeat;
         background-size: cover;
@@ -264,8 +263,7 @@ img {
     }
 }
 
-/* landscape */
-@media only screen and (max-height: 415px) {
+@media screen and (max-height: 570px) {
     html { 
         background-color: #8DB1EA;
     }
