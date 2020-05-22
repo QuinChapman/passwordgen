@@ -233,7 +233,7 @@ img {
         width: 70%; 
     }
     .generator input[type = "text"] {
-        padding-left: 5rem;
+        padding-left: 4.2rem;
     }
     .passLength {
         font-size: 16px;
@@ -257,6 +257,7 @@ img {
     }
     .generator {
         margin-top: 1.5rem;
+        width: 80%;
     }   
     .btn {
         margin-left: -1.7rem;
@@ -273,4 +274,31 @@ img {
     .result {
         font-size: 20px;
     }
+}
+
+@media screen and (max-width: 320px) {
+    .checkboxes {
+        width: 90%;
+    }
+    .genbtn {
+        padding: 0;
+        width: 50px;
+        transition: 0.3s;
+        height: 2.5rem;
+    }
+
+    .result {
+        height: 2.5rem;
+        font-size: 14px;
+        padding: 0;   
+        width: 100;
+    }
+
+    .generator input[type = "text"] {
+        padding-left: 2.8rem;
+    }
+
+    .generator {
+        width: 90%;
+    }   
 }
